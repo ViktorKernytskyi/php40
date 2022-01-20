@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c0a99282-e48b-4240-853f-0dfd492422c9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <execution />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="22YqTelDpKog4M2DGmKlaCZx6db" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/chernovik.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0a99282-e48b-4240-853f-0dfd492422c9" name="Default Changelist" comment="" />
+      <created>1640024877678</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640024877678</updated>
+      <workItem from="1640024878870" duration="19000" />
+      <workItem from="1640024906191" duration="2858000" />
+      <workItem from="1640280565816" duration="2112000" />
+      <workItem from="1640369255401" duration="12012000" />
+      <workItem from="1640546856823" duration="5463000" />
+      <workItem from="1640631981897" duration="9062000" />
+      <workItem from="1640673846142" duration="28903000" />
+      <workItem from="1640768776124" duration="13690000" />
+      <workItem from="1640852610650" duration="24119000" />
+      <workItem from="1640964295430" duration="34680000" />
+      <workItem from="1641108391485" duration="25553000" />
+      <workItem from="1641237002457" duration="6601000" />
+      <workItem from="1641316344010" duration="7597000" />
+      <workItem from="1641403634336" duration="14613000" />
+      <workItem from="1641477581134" duration="20848000" />
+      <workItem from="1641537812163" duration="36206000" />
+      <workItem from="1641714194050" duration="11694000" />
+      <workItem from="1641841087136" duration="4149000" />
+      <workItem from="1641922173287" duration="12564000" />
+      <workItem from="1642010392242" duration="13810000" />
+      <workItem from="1642098592355" duration="9654000" />
+      <workItem from="1642185560204" duration="5189000" />
+      <workItem from="1642322320532" duration="21292000" />
+      <workItem from="1642442290677" duration="7772000" />
+      <workItem from="1642525442486" duration="16068000" />
+      <workItem from="1642615603623" duration="11312000" />
+      <workItem from="1642655546165" duration="623000" />
+      <workItem from="1642658810041" duration="31752000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
