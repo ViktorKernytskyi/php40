@@ -18,6 +18,7 @@ $products = [
 
 /**1. добавление товара в корзину (т.е. добавление в массив в ключ items)
  */
+
 function addItem( $product)
 {
     $_SESSION['cart']['items'][$product['id']] = $product;
@@ -65,7 +66,7 @@ function deleteItem( int $id)
         unset($_SESSION['cart']['items'][$id]);
     }
 $count = $_SESSION['cart']['items'][$id]['count'];
-    $_SESSION['cart']['sum'] = $_SESSION['cart']['sum']-(int)$count*(int)($price);
+    $_SESSION['cart']['sum'] = $_SESSION['cart']['sum'] - (int)$count*(int)($price);
     $_SESSION['cart']['count'] = getCount();
 }
 
@@ -87,10 +88,9 @@ function changeQty($cart, $id, $qty)
 
     return $cart;
 }
-
-
 /**  4. пересчет корзины с учетом скидки(береме любую одну из предыдущей задачи на выбор)
 */
+
 function calculate($cart)
 {
     $sum = sumItems($cart);

@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/cart/cart_1.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/delete.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart_1.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart_1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/list.php" afterDir="false" />
     </list>
@@ -88,7 +89,7 @@
       <workItem from="1643225943240" duration="595000" />
       <workItem from="1643305182582" duration="9497000" />
       <workItem from="1643322950466" duration="607000" />
-      <workItem from="1643381976219" duration="4527000" />
+      <workItem from="1643381976219" duration="5312000" />
     </task>
     <servers />
   </component>

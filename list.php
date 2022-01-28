@@ -40,6 +40,7 @@ include('cart_1.php');
                     <input type="number" name="count" value="<?php echo $item['quantity'] ?>">
 
                     <input hidden name="id" value="<?php echo $key ?>">
+
                     <button type="submit" name="action" value="change_qty">Изменить</button>
                 </form>
             </td>
