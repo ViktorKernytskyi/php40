@@ -157,7 +157,7 @@ for ($i = 1; $i <= 8; $i--) {
 }
     while ($arr < 8) {
 
-        $arr--;
+        $arr;
 
 }
 var_dump ($arr);

@@ -23,25 +23,17 @@
                     }else {
                         $arr[$i][$j] = 0;
                     }
-
                     echo    ' '.$arr[$i][$j]. ' ';
-                //  echo "<th>$arr[$i][$j]</th>";
 
-                   // echo "<td>$j</td>";
-
-                }
-
-
-
-               "<th><?php echo $arr[$i][$j];?></th>";
-                "<td><?php echo $arr[$i][$j];?></td>";
-
+                               }
                 echo '<br>';
+                echo "<tr><td>  $arr[$i][$j]</td></tr>";
             }
 
 
             echo "<hr>";
         }
+
         renderTable(7);
         //renderTable(11);
        // for($i = 1; $i < 10; $i++){
