@@ -54,6 +54,7 @@ function getCount()
 
 /**2. удаление товара из корзины
  */
+
 function deleteItem( int $id)
 {
    //$id =$_GET['id'];
@@ -70,7 +71,7 @@ $count = $_SESSION['cart']['items'][$id]['count'];
 
 /** 3. изменение количества товара лежащего в корзине.
  */
-/**  */
+
 function changeQty($cart, $id, $qty)
 {
     foreach ($cart['items'] as $key=>$item){

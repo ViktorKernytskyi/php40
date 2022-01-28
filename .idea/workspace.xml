@@ -4,26 +4,12 @@
     <list default="true" id="c0a99282-e48b-4240-853f-0dfd492422c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/add.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/cart_1.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/delete.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/list.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart_1.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart_1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chernovik.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chernovik_1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chernovik_2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chernovik_3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chernovik_4.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dz_1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dz_2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dz_2_1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dz_3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dz_4.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/table_1.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +88,7 @@
       <workItem from="1643225943240" duration="595000" />
       <workItem from="1643305182582" duration="9497000" />
       <workItem from="1643322950466" duration="607000" />
-      <workItem from="1643381976219" duration="4187000" />
+      <workItem from="1643381976219" duration="4527000" />
     </task>
     <servers />
   </component>

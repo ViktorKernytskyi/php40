@@ -51,6 +51,6 @@ include('cart_1.php');
             </td>
 
         </tr>
-  // <?php $n++; } ?>
+   <?php $n++; } ?>
 
 </table>

@@ -1,6 +1,8 @@
 <?php
 session_start();
-/**  */
+
+
+
 require 'products.php';
 
 include('cart_1.php');
