@@ -8,8 +8,7 @@ if (isset($_POST['action']) && $_POST['action'] === 'changeQty') {
 
     if (isset($_POST['action']) && $_POST['action'] === 'calculate') {
         calculate($_POST['cart']);
-        var_dump('<pre>', $_POST['cart']);
-    }
+           }
 }
 ?>
 <h1>Корзина</h1>
@@ -64,5 +63,5 @@ if (isset($_POST['action']) && $_POST['action'] === 'changeQty') {
 
         </tr>
    <?php $n++; } ?>
-<?php   var_dump('<pre>',  $sale_2 )?>
+
 </table>
