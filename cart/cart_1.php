@@ -10,8 +10,8 @@ if (!isset($_SESSION['cart'])) {
     ];
 }
 $products = [
-    2 =>  ['name' => 'товар 1', 'price' => 10],
-    7 =>  ['name' => 'товар 2', 'price' => 333],
+    2 => ['name' => 'товар 1', 'price' => 10],
+    7 => ['name' => 'товар 2', 'price' => 333],
     43 => ['name' => 'товар 3', 'price' => 332],
 ];
 
@@ -25,27 +25,9 @@ function addItem($product)
     } else {
         $_SESSION['cart']['items'][$product['id']] = $product;
     }
-    $_SESSION['cart']['sum'] = sumItems();
-    $_SESSION['cart']['count'] = getCount();
+    calculate();
 }
 
-function sumItems()
-{
-    $sum = 0;
-    foreach ($_SESSION['cart']['items'] as $item) {
-        $sum += $item['quantity'] * $item['price'];
-    }
-    return $sum;
-}
-
-function getCount()
-{
-    $count = 0;
-    foreach ($_SESSION['cart']['items'] as $item) {
-        $count += $item['quantity'];
-    }
-    return $count;
-}
 
 /**
  * 2. удаление товара из корзины
@@ -55,8 +37,7 @@ function deleteItem(int $id)
     if (isset($_SESSION['cart']['items'][$id])) {
         unset($_SESSION['cart']['items'][$id]);
     }
-    $_SESSION['cart']['sum'] = sumItems();
-    $_SESSION['cart']['count'] = getCount();
+    calculate();
 }
 
 /**
@@ -70,10 +51,27 @@ function changeQty($id, $count)
             $_SESSION['cart']['items'][$id]['quantity'] = $count;
         }
     }
-    $_SESSION['cart']['sum'] = sumItems();
-    $_SESSION['cart']['count'] = getCount();
 
     calculate();
+}
+
+function setSumItems()
+{
+    $sum = 0;
+    foreach ($_SESSION['cart']['items'] as $item) {
+        $sum += $item['quantity'] * $item['price'];
+    }
+
+    $_SESSION['cart']['sum'] = $sum;
+}
+
+function setCount()
+{
+    $count = 0;
+    foreach ($_SESSION['cart']['items'] as $item) {
+        $count += $item['quantity'];
+    }
+    $_SESSION['cart']['count'] = $count;
 }
 
 function calculate()
@@ -83,11 +81,15 @@ function calculate()
     $sale_1 = 10; //скидка от суммы
     $sale_2 = 7; //скидка от  количечтва
 
-    if ($_SESSION['cart']['sum'] > 2000) {
-        $discount = $sale_1;
-    } else if ($_SESSION['cart']['count'] > 10) {
+    setSumItems();
+    setCount();
+
+    if ($_SESSION['cart']['count'] > 10) {
         $discount = $sale_2;
+    } else if ($_SESSION['cart']['sum'] > 2000) {
+        $discount = $sale_1;
     }
 
+    $_SESSION['cart']['discount'] = $discount;
     $_SESSION['cart']['sum'] = $_SESSION['cart']['sum'] - $_SESSION['cart']['sum'] * $discount / 100;
 }
