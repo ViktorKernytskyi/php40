@@ -3,6 +3,8 @@
 session_start();
 
 require('cart.php');
+require_once('Product.php');
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -15,39 +17,30 @@ require('cart.php');
 </head>
 <body>
 <?php
-//if (isset($_POST['action']) && $_POST['action'] === 'add') {
-    $cart = new Cart();
-//
-    $product = $products[$_POST['product']];
-    var_dump('<pre>', $product);
-    $product['id'] = $_POST['product'];
-    $product['quantity'] = $_POST['count'];
+$products = new Product();
 
- addItem($product);
-//}
-//
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $products->existProduct($_POST['product'])) {
+    $cart = new Cart();
+    $cart->addItem($_POST['product'], $_POST['count']);
+}
 ?>
-<a href="/cart_on_the_class/list.php">Список </a>
+<a href="/cart_on_the_class/list.php">
+    Список
+</a>
 
 <form method="post" action="/cart_on_the_class/add_to_cart.php">
     <select name="product">
         <?php
-            foreach ($products as $id => $product){
-                var_dump('<pre>', $product);
-                echo '<option value="' . $id .'">' . $product['name'] . '</option>';
-
+            foreach ($products->getProducts() as $id => $product) {
+                echo '<option value="' . $id . '">' . $product['name'] . '</option>';
             }
         ?>
-
     </select>
-        <input type="number" name="count" min="1" value="1">
+    <input type="number" name="count" min="1" value="1">
     <input hidden name="action" value="add_to_cart">
 
-    <button type="submit" >Отправить</button>
-    <?php
+    <button type="submit">Отправить</button>
 
-    var_dump('<pre>', $product['name']);
-    ?>
 </form>
 </body>
 </html>
