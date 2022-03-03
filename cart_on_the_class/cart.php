@@ -4,14 +4,13 @@ require_once('Product.php');
 
 class Cart
 {
+    const SALE_OT_SUM_AND_COUNT = 10;
+    const SALE_OT_COUNT = 7;
+
     public $items = []; // идентификатор товара
     public $count = 0; // кол-во товара  в корзине
     public $sum = 0; // кол-во товара  в корзине
-
-
     public $discount = 0; // скидка
-    private $sale_ot_sum_and_count = 10;
-    private $sale_ot_count = 7;
 
     public function __construct()
     {
@@ -59,9 +58,11 @@ class Cart
      */
     public function changeQty($id, $count)
     {
-                        $this->items[$id]['quantity'] = $count;
+        if (isset($this->items[$id]) && $_POST['count'] >= 1) {
+            $this->items[$id]['quantity'] = $count;
 
-                   $this->calculate();
+            $this->calculate();
+        }
     }
     public function calculate()
     {
@@ -76,9 +77,9 @@ class Cart
         $this->sum = $sum;
         $this->count = $count;
         if ($this->count > 10) {
-            $this->discount = $this->sale_ot_sum_and_count;
+            $this->discount = self::SALE_OT_SUM_AND_COUNT;
         } elseif ( $this->sum > 2000) {
-            $this->discount = $this->sale_ot_count;
+            $this->discount = self::SALE_OT_COUNT;
         }
                 $this->sum = $this->sum - $this->sum * $this->discount / 100;
     }

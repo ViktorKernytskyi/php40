@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $products->existProduct($_POST['pro
     $cart->addItem($_POST['product'], $_POST['count']);
 }
 ?>
-<a href="/cart_on_the_class/list.php">
+<a href="/cart_on_the_class/cart_items.php">
     Список
 </a>
 
